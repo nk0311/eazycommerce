@@ -2,6 +2,19 @@ main{
     min-height: 80vh; 
 }
 
+:root{
+    --body_background: white;
+    --body_color: black;
+    --link_color: navy;
+}
+
+[data-theme="dark"] {
+    --body_background: #282c34;
+    --body_color: white;
+    --link_color: cyan;
+
+}
+
 h1{
 
     font-size: 1.8rem;

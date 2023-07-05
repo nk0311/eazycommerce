@@ -8,6 +8,8 @@ import { listProducts } from '../actions/productActions';
 import ProductCarousel from '../components/ProductCarousel';
 import { useLocation } from 'react-router-dom';
 
+
+
 function HomeScreen() {
   const dispatch = useDispatch();
   const productList = useSelector((state) => state.productList);
@@ -25,6 +27,7 @@ function HomeScreen() {
       {!keyword &&  <ProductCarousel/>}
     
       <h1>Latest Products</h1>
+  
       {loading ? (
         <Loader />
       ) : error ? (
