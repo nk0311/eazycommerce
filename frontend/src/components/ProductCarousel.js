@@ -21,11 +21,11 @@ function ProductCarousel() {
     :error 
     ? <Message variant='danger'>{error}</Message>
     : (
-        <Carousel pause='hover' className='bg-dark'>
+        <Carousel pause='hover' className='bg-dark rounded-5'>
             {products.map(product => (
-                <Carousel.Item key={product._id}>
+                <Carousel.Item key={product._id} >
                     <Link to={`/product/${product._id}`}>
-                        <Image src={product.image} alt={product.name} fluid/>
+                        <Image src={product.image} alt={product.name} fluid height='200px' width='400px'/>
                         <Carousel.Caption className='carousel.caption'>
                             <h4>{product.name} (${product.price})</h4>
                         </Carousel.Caption>

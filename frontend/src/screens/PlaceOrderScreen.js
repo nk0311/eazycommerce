@@ -53,7 +53,7 @@ function PlaceOrderScreen() {
     }
 
     return (
-        <div>
+        <div className='p-4'>
             <CheckoutSteps step1 step2 step3 step4 />
             <Row>
                 <Col md={8}>
