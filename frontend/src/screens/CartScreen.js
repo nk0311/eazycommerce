@@ -33,6 +33,7 @@ function CartScreen() {
   }
 
   return (
+    <div className='p-4'>
     <Row>
       <Col md={8}>
         <h1>Shopping Cart</h1>
@@ -41,7 +42,7 @@ function CartScreen() {
             Your cart is empty <Link to='/'>Go Back</Link>
           </Message>
         ) : (
-          <ListGroup variant='flush'>
+          <ListGroup variant='flush rounded'>
             {cartItems.map(item => (
               <ListGroup.Item key={item.product}>
                 <Row>
@@ -86,7 +87,7 @@ function CartScreen() {
       </Col>
 
       <Col md={4}>
-        <Card>
+        <Card rounded>
           <ListGroup variant='flush'>
             <ListGroup.Item>
               <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
@@ -107,6 +108,7 @@ function CartScreen() {
         </Card>
       </Col>
     </Row>
+    </div>
   );
 }
 

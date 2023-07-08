@@ -72,6 +72,7 @@ function OrderScreen() {
     }
 
     return (
+        <div className='p-4'>
         <PayPalScriptProvider options={{ "client-id": "AWWGzJy5pLKX7QTZRwepr0FmdQS05xqfHI1ikG06MHDbMBmIp9qW3urnTdfWLx_AhK3yFzkONiBoFGzU" }}>
             {loading ? (
                 <Loader />
@@ -237,6 +238,7 @@ function OrderScreen() {
                 </div>
             )}
         </PayPalScriptProvider>
+        </div>
     );
 }
 

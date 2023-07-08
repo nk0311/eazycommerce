@@ -23,10 +23,10 @@ function HomeScreen() {
   }, [dispatch, keyword]);
 
   return (
-    <div>
+    <div style={{margin: '30px'}}>
       {!keyword &&  <ProductCarousel/>}
     
-      <h1>Latest Products</h1>
+      <h1>Recently Added </h1>
   
       {loading ? (
         <Loader />
