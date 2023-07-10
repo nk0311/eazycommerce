@@ -48,7 +48,7 @@ function Product({ product }) {
           src={product.image}
           alt={product.name}
           className="rounded-4"
-          style={{ height: '300px', objectFit: 'cover' }}
+          style={{ height: '300px', display: 'flex', justifyContent: 'center' }}
         />
       </Link>
 

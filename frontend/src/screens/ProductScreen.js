@@ -71,7 +71,7 @@ function ProductScreen() {
                 src={product.image}
                 alt={product.name} 
                 fluid 
-                style={{ borderRadius: '5%', height: '400px', width: '600px'}}
+                style={{ borderRadius: '5%', objectFit: 'contain', maxHeight:'500px'}}
               />
             </Col>
 
