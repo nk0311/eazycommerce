@@ -25,7 +25,7 @@ function ProductCarousel() {
             {products.map(product => (
                 <Carousel.Item key={product._id} >
                     <Link to={`/product/${product._id}`}>
-                        <Image src={product.image} alt={product.name} fluid height='200px' width='400px'/>
+                        <Image src={product.image} alt={product.name} fluid height='200px' />
                         <Carousel.Caption className='carousel.caption'>
                             <h4>{product.name} (${product.price})</h4>
                         </Carousel.Caption>
@@ -40,3 +40,4 @@ function ProductCarousel() {
 }
 
 export default ProductCarousel
+
